@@ -1,0 +1,115 @@
+name: Arrondissements
+description: |-
+
+  Requêtes sur les arrondissements
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/arrondissements
+    metadata:
+      groupName: Arrondissements
+      groupDescription: |-
+
+        Requêtes sur les arrondissements
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '[{"id":1,"label":"FOUNOUGO"},{"id":2,"label":"GOMPAROU"},{"id":3,"label":"GOUMORI"},{"id":4,"label":"KOKEY"},{"id":5,"label":"KOKIBOROU"},{"id":6,"label":"OUNET"},{"id":7,"label":"SOMPEROUKOU"},{"id":8,"label":"SOROKO"},{"id":9,"label":"TOURA"},{"id":10,"label":"BANIKOARA"},{"id":11,"label":"BAGOU"},{"id":12,"label":"GOUNAROU"},{"id":13,"label":"SORI"},{"id":14,"label":"SOUGOU-KPAN-TROSSI"},{"id":15,"label":"WARA"},{"id":16,"label":"GOGOUNOU"},{"id":17,"label":"ANGARADEBOU"},{"id":18,"label":"BENSEKOU"},{"id":19,"label":"DONWARI"},{"id":20,"label":"KASSAKOU"},{"id":21,"label":"SAAH"},{"id":22,"label":"SAM"},{"id":23,"label":"SONSORO"},{"id":24,"label":"KANDI 1"},{"id":25,"label":"KANDI 2"},{"id":26,"label":"KANDI 3"},{"id":27,"label":"BIRNI LAFIA"},{"id":28,"label":"BOGO-BOGO"},{"id":29,"label":"KOMPA"},{"id":30,"label":"MONSEY"},{"id":31,"label":"KARIMAMA"},{"id":32,"label":"GAROU"},{"id":33,"label":"GUENE"},{"id":34,"label":"MADECALI"},{"id":35,"label":"TOUMBOUTOU"},{"id":36,"label":"MALANVILLE"},{"id":37,"label":"LIBANTE"},{"id":38,"label":"LIBOUSSOU"},{"id":39,"label":"LOUGOU"},{"id":40,"label":"SOKOTINDJI"},{"id":41,"label":"SEGBANA"},{"id":42,"label":"DIPOLI"},{"id":43,"label":"KORONTIERE"},{"id":44,"label":"KOUSSOUCOINGOU"},{"id":45,"label":"MANTA"},{"id":46,"label":"NATA"},{"id":47,"label":"TABOTA"},{"id":48,"label":"BOUKOUMBE"},{"id":49,"label":"DATORI"},{"id":50,"label":"KOUNTORI"},{"id":51,"label":"TAPOGA"},{"id":52,"label":"COBLY"},{"id":53,"label":"BRIGNAMARO"},{"id":54,"label":"FIROU"},{"id":55,"label":"KAOBAGOU"},{"id":56,"label":"KEROU"},{"id":57,"label":"BIRNI"},{"id":58,"label":"CHABI-COUMA"},{"id":59,"label":"FOO-TANCE"},{"id":60,"label":"GUILMARO"},{"id":61,"label":"OROUKAYO"},{"id":62,"label":"KOUANDE"},{"id":63,"label":"DASSARI"},{"id":64,"label":"GOUANDE"},{"id":65,"label":"NODI"},{"id":66,"label":"TANTEGA"},{"id":67,"label":"TCHANHOUNCOSSI"},{"id":68,"label":"MATERI"},{"id":69,"label":"KOTOPOUNGA"},{"id":70,"label":"KOUABA"},{"id":71,"label":"KOUANDATA"},{"id":72,"label":"PERMA"},{"id":73,"label":"TCHOUMI-TCHOUMI"},{"id":74,"label":"NATITINGOU I"},{"id":75,"label":"NATITINGOU II"},{"id":76,"label":"NATITINGOU III"},{"id":77,"label":"PEPORIYAKOU"},{"id":78,"label":"GNEMASSON"},{"id":79,"label":"TOBRE"},{"id":80,"label":"PEHUNCO"},{"id":81,"label":"COTIAKOU"},{"id":82,"label":"N''DAHONTA"},{"id":83,"label":"TAIACOU"},{"id":84,"label":"TANONGOU"},{"id":85,"label":"TANGUIETA"},{"id":86,"label":"KOUARFA"},{"id":87,"label":"TAMPEGRE"},{"id":88,"label":"TOUKOUNTOUNA"},{"id":89,"label":"AKASSATO"},{"id":90,"label":"GODOMEY"},{"id":91,"label":"GOLO-DJIGBE"},{"id":92,"label":"HEVIE"},{"id":93,"label":"KPANROUN"},{"id":94,"label":"OUEDO"},{"id":95,"label":"TOGBA"},{"id":96,"label":"ZINVIE"},{"id":97,"label":"ABOMEY-CALAVI"},{"id":98,"label":"AGBANOU"},{"id":99,"label":"AHOUANNONZOUN"},{"id":100,"label":"ATTOGON"},{"id":101,"label":"AVAKPA"},{"id":102,"label":"AYOU"},{"id":103,"label":"HINVI"},{"id":104,"label":"LISSEGAZOUN"},{"id":105,"label":"LON-AGONMEY"},{"id":106,"label":"SEKOU"},{"id":107,"label":"TOKPA"},{"id":108,"label":"ALLADA CENTRE"},{"id":109,"label":"TOGOUDO"},{"id":110,"label":"AGANMALOME"},{"id":111,"label":"AGBANTO"},{"id":112,"label":"AGONKANME"},{"id":113,"label":"DEDOME"},{"id":114,"label":"DEKANME"},{"id":115,"label":"SEGBEYA"},{"id":116,"label":"SEGBOHOUE"},{"id":117,"label":"TOKPA-DOME"},{"id":118,"label":"KPOMASSE CENTRE"},{"id":119,"label":"AVLEKETE"},{"id":120,"label":"DJEGBADJI"},{"id":121,"label":"GAKPE"},{"id":122,"label":"HOUAKPE-DAHO"},{"id":123,"label":"PAHOU"},{"id":124,"label":"SAVI"},{"id":125,"label":"OUIDAH I"},{"id":126,"label":"OUIDAH II"},{"id":127,"label":"OUIDAH III"},{"id":128,"label":"OUIDAH IV"},{"id":129,"label":"AHOMEY-LOKPO"},{"id":130,"label":"DEKANMEY"},{"id":131,"label":"GANVIE 1"},{"id":132,"label":"GANVIE 2"},{"id":133,"label":"HOUEDO-AGUEKON"},{"id":134,"label":"VEKKY"},{"id":135,"label":"SO-AVA"},{"id":136,"label":"AGUE"},{"id":137,"label":"COLLI"},{"id":138,"label":"COUSSI"},{"id":139,"label":"DAME"},{"id":140,"label":"DJANGLANME"},{"id":141,"label":"HOUEGBO"},{"id":142,"label":"KPOME"},{"id":143,"label":"SEHOUE"},{"id":144,"label":"SEY"},{"id":145,"label":"TOFFO"},{"id":146,"label":"AVAME"},{"id":147,"label":"AZOHOUE-ALIHO"},{"id":148,"label":"AZOHOUE-CADA"},{"id":149,"label":"TORI-CADA"},{"id":150,"label":"TORI-GARE"},{"id":151,"label":"TORI-BOSSITO"},{"id":152,"label":"ADJAN"},{"id":153,"label":"DAWE"},{"id":154,"label":"DJIGBE"},{"id":155,"label":"DODJI-BATA"},{"id":156,"label":"HEKANME"},{"id":157,"label":"KOUNDOKPOE"},{"id":158,"label":"SEDJE-DENOU"},{"id":159,"label":"SEDJE-HOUEGOUDO"},{"id":160,"label":"TANGBO"},{"id":161,"label":"YOKPO"},{"id":162,"label":"ZE"},{"id":163,"label":"BEROUBOUAY"},{"id":164,"label":"BOUANRI"},{"id":165,"label":"GAMIA"},{"id":166,"label":"INA"},{"id":167,"label":"BEMBEREKE"},{"id":168,"label":"BASSO"},{"id":169,"label":"BOUCA"},{"id":170,"label":"DERASSI"},{"id":171,"label":"DUNKASSA"},{"id":172,"label":"PEONGA"},{"id":173,"label":"KALALE"},{"id":174,"label":"BORI"},{"id":175,"label":"GBEGOUROU"},{"id":176,"label":"OUENOU"},{"id":177,"label":"SIRAROU"},{"id":178,"label":"N''DALI"},{"id":179,"label":"BIRO"},{"id":180,"label":"GNONKOUROKALI"},{"id":181,"label":"OUENOU"},{"id":182,"label":"SEREKALI"},{"id":183,"label":"SUYA"},{"id":184,"label":"TASSO"},{"id":185,"label":"NIKKI"},{"id":186,"label":"1ER ARRONDISSEMENT"},{"id":187,"label":"2EME ARRONDISSEMENT"},{"id":188,"label":"3EME ARRONDISSEMENT"},{"id":189,"label":"GNINSY"},{"id":190,"label":"GUINAGOUROU"},{"id":191,"label":"KPEBIE"},{"id":192,"label":"PANE"},{"id":193,"label":"SONTOU"},{"id":194,"label":"PERERE"},{"id":195,"label":"FO-BOURE"},{"id":196,"label":"SEKERE"},{"id":197,"label":"SIKKI"},{"id":198,"label":"SINENDE"},{"id":199,"label":"ALAFIAROU"},{"id":200,"label":"BETEROU"},{"id":201,"label":"GORO"},{"id":202,"label":"KIKA"},{"id":203,"label":"SANSON"},{"id":204,"label":"TCHATCHOU"},{"id":205,"label":"TCHAOUROU"},{"id":206,"label":"AGOUA"},{"id":207,"label":"AKPASSI"},{"id":208,"label":"ATOKOLIBE"},{"id":209,"label":"BOBE"},{"id":210,"label":"GOUKA"},{"id":211,"label":"KOKO"},{"id":212,"label":"LOUGBA"},{"id":213,"label":"PIRA"},{"id":214,"label":"BANTE"},{"id":215,"label":"AKOFFODJOULE"},{"id":216,"label":"GBAFFO"},{"id":217,"label":"KERE"},{"id":218,"label":"KPINGNI"},{"id":219,"label":"LEMA"},{"id":220,"label":"PAOUINGNAN"},{"id":221,"label":"SOCLOGBO"},{"id":222,"label":"TRE"},{"id":223,"label":"DASSA I"},{"id":224,"label":"DASSA II"},{"id":225,"label":"AKLAMPA"},{"id":226,"label":"ASSANTE"},{"id":227,"label":"GOME"},{"id":228,"label":"KPAKPAZA"},{"id":229,"label":"MAGOUMI"},{"id":230,"label":"OUEDEME"},{"id":231,"label":"SOKPONTA"},{"id":232,"label":"THIO"},{"id":233,"label":"ZAFFE"},{"id":234,"label":"GLAZOUE"},{"id":235,"label":"CHALLA-OGOI"},{"id":236,"label":"DJEGBE"},{"id":237,"label":"GBANLIN"},{"id":238,"label":"IKEMON"},{"id":239,"label":"KILIBO"},{"id":240,"label":"LAMINOU"},{"id":241,"label":"ODOUGBA"},{"id":242,"label":"TOUI"},{"id":243,"label":"OUESSE"},{"id":244,"label":"DJALLOUKOU"},{"id":245,"label":"DOUME"},{"id":246,"label":"GOBADA"},{"id":247,"label":"KPATABA"},{"id":248,"label":"LAHOTAN"},{"id":249,"label":"LEMA"},{"id":250,"label":"LOGOZOHE"},{"id":251,"label":"MONKPA"},{"id":252,"label":"OTTOLA"},{"id":253,"label":"OUESSE"},{"id":254,"label":"TCHETTI"},{"id":255,"label":"SAVALOU-AGA"},{"id":256,"label":"SAVALOU-AGBADO"},{"id":257,"label":"SAVALOU-ATTAKE"},{"id":258,"label":"BESSE"},{"id":259,"label":"KABOUA"},{"id":260,"label":"OFFE"},{"id":261,"label":"OKPARA"},{"id":262,"label":"SAKIN"},{"id":263,"label":"ADIDO"},{"id":264,"label":"BONI"},{"id":265,"label":"PLATEAU"},{"id":266,"label":"ATOMEY"},{"id":267,"label":"AZOVE"},{"id":268,"label":"DEKPO-CENTRE"},{"id":269,"label":"GODOHOU"},{"id":270,"label":"KISSAMEY"},{"id":271,"label":"LONKLY"},{"id":272,"label":"APLAHOUE"},{"id":273,"label":"ADJINTIMEY"},{"id":274,"label":"BETOUMEY"},{"id":275,"label":"GOHOMEY"},{"id":276,"label":"HOUEGAMEY"},{"id":277,"label":"KINKINHOUE"},{"id":278,"label":"KOKOHOUE"},{"id":279,"label":"KPOBA"},{"id":280,"label":"SOKOUHOUE"},{"id":281,"label":"DJAKOTOMEY I"},{"id":282,"label":"DJAKOTOMEY II"},{"id":283,"label":"AYOMI"},{"id":284,"label":"DEVE"},{"id":285,"label":"HONTON"},{"id":286,"label":"LOKOGOHOUE"},{"id":287,"label":"MADJRE"},{"id":288,"label":"TOTCHANGNI CENTRE"},{"id":289,"label":"TOTA"},{"id":290,"label":"ADJAHONME"},{"id":291,"label":"AHOGBEYA"},{"id":292,"label":"AYAHOHOUE"},{"id":293,"label":"DJOTTO"},{"id":294,"label":"HONDJIN"},{"id":295,"label":"LANTA"},{"id":296,"label":"TCHIKPE"},{"id":297,"label":"KLOUEKANME"},{"id":298,"label":"ADOUKANDJI"},{"id":299,"label":"AHODJINNAKO"},{"id":300,"label":"AHOMADEGBE"},{"id":301,"label":"BANIGBE"},{"id":302,"label":"GNIZOUNME"},{"id":303,"label":"HLASSAME"},{"id":304,"label":"LOKOGBA"},{"id":305,"label":"TCHITO"},{"id":306,"label":"TOHOU"},{"id":307,"label":"ZALLI"},{"id":308,"label":"LALO"},{"id":309,"label":"ADJIDO"},{"id":310,"label":"AVEDJIN"},{"id":311,"label":"DOKO"},{"id":312,"label":"HOUEDOGLI"},{"id":313,"label":"MISSINKO"},{"id":314,"label":"TANNOU-GOLA"},{"id":315,"label":"TOVIKLIN"},{"id":316,"label":"ALEDJO"},{"id":317,"label":"MANIGRI"},{"id":318,"label":"PENESSOULOU"},{"id":319,"label":"BASSILA"},{"id":320,"label":"ANANDANA"},{"id":321,"label":"PABEGOU"},{"id":322,"label":"SINGRE"},{"id":323,"label":"COPARGO"},{"id":324,"label":"BAREI"},{"id":325,"label":"BARIENOU"},{"id":326,"label":"BELLEFOUNGOU"},{"id":327,"label":"BOUGOU"},{"id":328,"label":"KOLOCONDE"},{"id":329,"label":"ONKLOU"},{"id":330,"label":"PARTAGO"},{"id":331,"label":"PELEBINA"},{"id":332,"label":"SEROU"},{"id":333,"label":"DJOUGOU I"},{"id":334,"label":"DJOUGOU II"},{"id":335,"label":"DJOUGOU III"},{"id":336,"label":"BADJOUDE"},{"id":337,"label":"KOMDE"},{"id":338,"label":"SEMERE 1"},{"id":339,"label":"SEMERE 2"},{"id":340,"label":"TCHALINGA"},{"id":341,"label":"OUAKE"},{"id":342,"label":"1ER ARRONDISSEMENT"},{"id":343,"label":"2EME ARRONDISSEMENT"},{"id":344,"label":"3EME ARRONDISSEMENT"},{"id":345,"label":"4EME ARRONDISSEMENT"},{"id":346,"label":"5EME ARRONDISSEMENT"},{"id":347,"label":"6EME ARRONDISSEMENT"},{"id":348,"label":"7EME ARRONDISSEMENT"},{"id":349,"label":"8EME ARRONDISSEMENT"},{"id":350,"label":"9EME ARRONDISSEMENT"},{"id":351,"label":"10EME ARRONDISSEMENT"},{"id":352,"label":"11EME ARRONDISSEMENT"},{"id":353,"label":"12EME ARRONDISSEMENT"},{"id":354,"label":"13EME ARRONDISSEMENT"},{"id":355,"label":"ADOHOUN"},{"id":356,"label":"ATCHANNOU"},{"id":357,"label":"DEDEKPOE"},{"id":358,"label":"KPINNOU"},{"id":359,"label":"ATHIEME"},{"id":360,"label":"AGBODJI"},{"id":361,"label":"BADAZOUIN"},{"id":362,"label":"GBAKPODJI"},{"id":363,"label":"LOBOGO"},{"id":364,"label":"POSSOTOME"},{"id":365,"label":"YEGODOE"},{"id":366,"label":"BOPA"},{"id":367,"label":"AGATOGBO"},{"id":368,"label":"AKODEHA"},{"id":369,"label":"OUEDEME-PEDAH"},{"id":370,"label":"OUMAKO"},{"id":371,"label":"COME"},{"id":372,"label":"ADJAHA"},{"id":373,"label":"AGOUE"},{"id":374,"label":"AVLO"},{"id":375,"label":"DJANGLANMEY"},{"id":376,"label":"GBEHOUE"},{"id":377,"label":"SAZUE"},{"id":378,"label":"GRAND-POPO"},{"id":379,"label":"DAHE"},{"id":380,"label":"DOUTOU"},{"id":381,"label":"HONHOUE"},{"id":382,"label":"ZOUNGBONOU"},{"id":383,"label":"HOUEYOGBE"},{"id":384,"label":"SE"},{"id":385,"label":"AGAME"},{"id":386,"label":"HOUIN"},{"id":387,"label":"KOUDO"},{"id":388,"label":"OUEDEME-ADJA"},{"id":389,"label":"LOKOSSA"},{"id":390,"label":"AGLOGBE"},{"id":391,"label":"HONVIE"},{"id":392,"label":"MALANHOUI"},{"id":393,"label":"MEDEDJONOU"},{"id":394,"label":"ADJARRA 1"},{"id":395,"label":"ADJARRA 2"},{"id":396,"label":"AKPADANOU"},{"id":397,"label":"AWONOU"},{"id":398,"label":"AZOWLISSE"},{"id":399,"label":"DEME"},{"id":400,"label":"GANGBAN"},{"id":401,"label":"KODE"},{"id":402,"label":"TOGBOTA"},{"id":403,"label":"ADJOHOUN"},{"id":404,"label":"AVAGBODJI"},{"id":405,"label":"HOUEDOME"},{"id":406,"label":"ZOUNGAME"},{"id":407,"label":"GOME-SOTA"},{"id":408,"label":"KATAGON"},{"id":409,"label":"VAKON"},{"id":410,"label":"ZOUNGBOME"},{"id":411,"label":"AKPRO-MISSERETE"},{"id":412,"label":"ATCHOUKPA"},{"id":413,"label":"DJOMON"},{"id":414,"label":"GBOZOUME"},{"id":415,"label":"KOUTI"},{"id":416,"label":"OUANHO"},{"id":417,"label":"SADO"},{"id":418,"label":"AVRANKOU"},{"id":419,"label":"AFFAME"},{"id":420,"label":"ATCHONSA"},{"id":421,"label":"DAME-WOGON"},{"id":422,"label":"HOUNVIGUE"},{"id":423,"label":"BONOU"},{"id":424,"label":"DEKIN"},{"id":425,"label":"GBEKO"},{"id":426,"label":"HOUEDOMEY"},{"id":427,"label":"HOZIN"},{"id":428,"label":"KESSOUNOU"},{"id":429,"label":"ZOUNGUE"},{"id":430,"label":"DANGBO"},{"id":431,"label":"1ER ARRONDISSEMENT"},{"id":432,"label":"2EME ARRONDISSEMENT"},{"id":433,"label":"3EME ARRONDISSEMENT"},{"id":434,"label":"4EME ARRONDISSEMENT"},{"id":435,"label":"5EME ARRONDISSEMENT"},{"id":436,"label":"AGBLANGANDAN"},{"id":437,"label":"AHOLOUYEME"},{"id":438,"label":"DJEREGBE"},{"id":439,"label":"EKPE"},{"id":440,"label":"TOHOUE"},{"id":441,"label":"SEME-PODJI"},{"id":442,"label":"IKPINLE"},{"id":443,"label":"KPOULOU"},{"id":444,"label":"MASSE"},{"id":445,"label":"OKO-AKARE"},{"id":446,"label":"TATONNONKON"},{"id":447,"label":"ADJA-OUERE"},{"id":448,"label":"BANIGBE"},{"id":449,"label":"DAAGBE"},{"id":450,"label":"KO-KOUMOLOU"},{"id":451,"label":"LAGBE"},{"id":452,"label":"TCHAADA"},{"id":453,"label":"IFANGNI"},{"id":454,"label":"ADAKPLAME"},{"id":455,"label":"IDIGNY"},{"id":456,"label":"KPANKOU"},{"id":457,"label":"ODOMETA"},{"id":458,"label":"OKPOMETA"},{"id":459,"label":"KETOU"},{"id":460,"label":"AHOYEYE"},{"id":461,"label":"IGANA"},{"id":462,"label":"ISSABA"},{"id":463,"label":"TOWE"},{"id":464,"label":"POBE"},{"id":465,"label":"AGUIDI"},{"id":466,"label":"ITA-DJEBOU"},{"id":467,"label":"TAKON"},{"id":468,"label":"YOKO"},{"id":469,"label":"SAKETE 1"},{"id":470,"label":"SAKETE 2"},{"id":471,"label":"AGBOKPA"},{"id":472,"label":"DETOHOU"},{"id":473,"label":"SEHOUN"},{"id":474,"label":"ZOUNZONME"},{"id":475,"label":"DJEGBE"},{"id":476,"label":"HOUNLI"},{"id":477,"label":"VIDOLE"},{"id":478,"label":"ADANHONDJIGO"},{"id":479,"label":"ADINGNIGON"},{"id":480,"label":"KINTA"},{"id":481,"label":"KPOTA"},{"id":482,"label":"LISSAZOUNME"},{"id":483,"label":"SAHE"},{"id":484,"label":"SINWE"},{"id":485,"label":"TANVE"},{"id":486,"label":"ZOUNGOUNDO"},{"id":487,"label":"AGBANGNIZOUN"},{"id":488,"label":"AGONGOINTO"},{"id":489,"label":"AVOGBANNA"},{"id":490,"label":"GNIDJAZOUN"},{"id":491,"label":"LISSEZOUN"},{"id":492,"label":"OUASSAHO"},{"id":493,"label":"PASSAGON"},{"id":494,"label":"SACLO"},{"id":495,"label":"SODOHOME"},{"id":496,"label":"BOHICON I"},{"id":497,"label":"BOHICON II"},{"id":498,"label":"HOUEKO"},{"id":499,"label":"ADOGBE"},{"id":500,"label":"GOUNLI"},{"id":501,"label":"HOUIN-HOUNSO"},{"id":502,"label":"LAINTA-COGBE"},{"id":503,"label":"NAOGON"},{"id":504,"label":"SOLI"},{"id":505,"label":"ZOGBA"},{"id":506,"label":"AGONDJI"},{"id":507,"label":"AGOUNA"},{"id":508,"label":"DAN"},{"id":509,"label":"DOHOUIME"},{"id":510,"label":"GOBAIX"},{"id":511,"label":"HOUTO"},{"id":512,"label":"MONSOUROU"},{"id":513,"label":"MOUGNON"},{"id":514,"label":"OUMBEGAME"},{"id":515,"label":"SETTO"},{"id":516,"label":"ZOUNKON"},{"id":517,"label":"DJIDJA CENTRE"},{"id":518,"label":"DASSO"},{"id":519,"label":"SAGON"},{"id":520,"label":"TOHOUES"},{"id":521,"label":"OUINHI CENTRE"},{"id":522,"label":"AGONLIN-HOUEGBO"},{"id":523,"label":"BANAME"},{"id":524,"label":"DON-TAN"},{"id":525,"label":"DOVI"},{"id":526,"label":"KPEDEKPO"},{"id":527,"label":"ZAGNANADO CENTRE"},{"id":528,"label":"ALLAHE"},{"id":529,"label":"ASSANLIN"},{"id":530,"label":"HOUNGOME"},{"id":531,"label":"KPAKPAME"},{"id":532,"label":"KPOZOUN"},{"id":533,"label":"ZA-TANTA"},{"id":534,"label":"ZEKO"},{"id":535,"label":"ZA-KPOTA"},{"id":536,"label":"AKIZA"},{"id":537,"label":"AVLAME"},{"id":538,"label":"CANA I"},{"id":539,"label":"CANA II"},{"id":540,"label":"DOME"},{"id":541,"label":"KOUSSOUKPA"},{"id":542,"label":"KPOKISSA"},{"id":543,"label":"MASSI"},{"id":544,"label":"TANWE-HESSOU"},{"id":545,"label":"ZOUKOU"},{"id":546,"label":"ZOGBODOMEY CENTRE"}]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '51'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/arrondissements/{communeName}/arrondissement/{arrondissementName}'
+    metadata:
+      groupName: Arrondissements
+      groupDescription: |-
+
+        Requêtes sur les arrondissements
+      subgroup: ''
+      subgroupDescription: ''
+      title: "Récupère les quartiers d'un arrondissement d'une commune spécifique"
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      communeName:
+        name: communeName
+        description: 'Le nom de la commune.'
+        required: true
+        example: Bohicon
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        custom: []
+      arrondissementName:
+        name: arrondissementName
+        description: "Le nom de l'arrondissement."
+        required: true
+        example: |-
+          AGBANWEME
+          JsonResponse : Les quartiers de l'arrondissement fourni.
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        custom: []
+    cleanUrlParameters:
+      communeName: Bohicon
+      arrondissementName: |-
+        AGBANWEME
+        JsonResponse : Les quartiers de l'arrondissement fourni.
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 404
+        content: '{"message":"Arrondissement non trouv\u00e9 dans cette commune"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '50'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
