@@ -23,17 +23,77 @@ endpoints:
     headers:
       Content-Type: application/json
       Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
+    urlParameters:
+      search:
+        name: search
+        description: 'Une partie de l\''écriture de la département recherché.'
+        required: false
+        example: Bo
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        custom: []
+      perPage:
+        name: perPage
+        description: 'Nombre de résultat par page.'
+        required: false
+        example: 10
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        custom: []
+      page:
+        name: page
+        description: 'Le numero de page.'
+        required: false
+        example: 2
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        custom: []
+    cleanUrlParameters:
+      search: Bo
+      perPage: 10
+      page: 2
     queryParameters: []
     cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
+    bodyParameters:
+      search:
+        name: search
+        description: ''
+        required: false
+        example: reiciendis
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      page:
+        name: page
+        description: 'Must be at least 1.'
+        required: false
+        example: 78
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      perPage:
+        name: perPage
+        description: 'Must be at least 1.'
+        required: false
+        example: 48
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      search: reiciendis
+      page: 78
+      perPage: 48
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '[{"id":1,"label":"ALIBORI"},{"id":2,"label":"ATACORA"},{"id":3,"label":"ATLANTIQUE"},{"id":4,"label":"BORGOU"},{"id":5,"label":"COLLINES"},{"id":6,"label":"COUFFO"},{"id":7,"label":"DONGA"},{"id":8,"label":"LITTORAL"},{"id":9,"label":"MONO"},{"id":10,"label":"OUEME"},{"id":11,"label":"PLATEAU"},{"id":12,"label":"ZOU"}]'
+        status: 404
+        content: '{"error":"D\u00e9partement non trouv\u00e9"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
