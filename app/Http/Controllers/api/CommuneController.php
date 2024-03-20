@@ -23,50 +23,50 @@ class CommuneController extends Controller
      * @urlParam page int Le numero de page. Example: 3
      * @return JsonResponse La liste des communes.
      */
-    // public function index(CommuneRequest $request)
-    // {
-    //     try {
-    //         $communes = Commune::query();
-    //         if ($request->input('search') == null && $request->input('page')== null && $perPage = $request->input('perPage') == null) {
-    //             $result = $communes->get();
-    //             return response()->json($result);
-    //         }
+    public function index(CommuneRequest $request)
+    {
+        try {
+            $communes = Commune::query();
+            if ($request->input('search') == null && $request->input('page')== null && $perPage = $request->input('perPage') == null) {
+                $result = $communes->get();
+                return response()->json($result);
+            }
             
-    //         $search = $request->input('search');
-    //         $page = $request->input('page', 1);
-    //         $perPage = $request->input('perPage', 10);
+            $search = $request->input('search');
+            $page = $request->input('page', 1);
+            $perPage = $request->input('perPage', 10);
         
-    //         // Filtrer les communes en fonction du terme de recherche s'il est fourni
-    //         if ($search) {
-    //             $communes->where('label', 'LIKE', '%' . $search . '%');
-    //         }
-    //         // Récupérer le nombre total de résultats
-    //         $total = $communes->count();
-    //         if ($total==0) {
-    //             return response()->json(["error" => "Commune non trouvé"], 404);
-    //         }
-    //         // Calculer le nombre total de pages
-    //         $lastPage = ceil($total / $perPage);
-    //         // Vérifier si la page demandée est valide
-    //         if ($page < 1 || $page > $lastPage) {
-    //             return response()->json(["error" => "Aucun résultat sur cette page"], 404);
-    //         }
-    //         // Récupérer les communes pour la page demandée
-    //         $result = $communes->offset(($page - 1) * $perPage)->limit($perPage)->get();
-    //         // Vérifier si aucun résultat sur la page
-    //         if ($result->isEmpty()) {
-    //             return response()->json(["error" => "Aucun résultat sur cette page"], 404);
-    //         }
+            // Filtrer les communes en fonction du terme de recherche s'il est fourni
+            if ($search) {
+                $communes->where('label', 'LIKE', '%' . $search . '%');
+            }
+            // Récupérer le nombre total de résultats
+            $total = $communes->count();
+            if ($total==0) {
+                return response()->json(["error" => "Commune non trouvé"], 404);
+            }
+            // Calculer le nombre total de pages
+            $lastPage = ceil($total / $perPage);
+            // Vérifier si la page demandée est valide
+            if ($page < 1 || $page > $lastPage) {
+                return response()->json(["error" => "Aucun résultat sur cette page"], 404);
+            }
+            // Récupérer les communes pour la page demandée
+            $result = $communes->offset(($page - 1) * $perPage)->limit($perPage)->get();
+            // Vérifier si aucun résultat sur la page
+            if ($result->isEmpty()) {
+                return response()->json(["error" => "Aucun résultat sur cette page"], 404);
+            }
         
-    //         return response()->json([
-    //             "current_page" => $page,
-    //             "last_page" => $lastPage,
-    //             "communes" => $result
-    //         ]);
-    //     } catch (Exception $e) {
-    //         return response()->json($e->getMessage(), 500);
-    //     }  
-    // }
+            return response()->json([
+                "current_page" => $page,
+                "last_page" => $lastPage,
+                "communes" => $result
+            ]);
+        } catch (Exception $e) {
+            return response()->json($e->getMessage(), 500);
+        }  
+    }
 
 
     /**
