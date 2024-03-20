@@ -7,11 +7,11 @@ return [
     'title' => "API Bénin découpage territorial",
 
     // A short description of your API. Will be included in the docs webpage, Postman collection and OpenAPI spec.
-    'description' => "Il s'agit d'une interface de programmation (non officielle) permettant d'accéder à des données fondamentales sur les départements, les communes, les arrondissements et les quartiers du Bénin.",
+    'description' => "Il s'agit d'une interface de programmation (non officielle) permettant d'accéder à des données fondamentales sur les départements, les communes, les arrondissements et les quartiers du Bénin. \n Cette API s'inspire du découpage territorial du Bénin tel que proposé par leplutonien.",
 
     // The base URL displayed in the docs. If this is empty, Scribe will use the value of config('app.url') at generation time.
     // If you're using `laravel` type, you can set this to a dynamic string, like '{{ config("app.tenant_url") }}' to get a dynamic base URL.
-    'base_url' => 'localhost:8000',
+    'base_url' => 'https://bj-decoupage.wwiinn.org/',
 
     'routes' => [
         [
@@ -44,7 +44,7 @@ return [
     // - "laravel" will generate the documentation as a Blade view, so you can add routing and authentication.
     // - "external_static" and "external_laravel" do the same as above, but generate a basic template,
     // passing the OpenAPI spec as a URL, allowing you to easily use the docs with an external generator
-    'type' => 'static',
+    'type' => 'laravel',
 
     // See https://scribe.knuckles.wtf/laravel/reference/config#theme for supported options
     'theme' => 'default',
@@ -84,7 +84,7 @@ return [
 
         // The base URL for the API tester to use (for example, you can set this to your staging URL).
         // Leave as null to use the current app URL when generating (config("app.url")).
-        'base_url' => 'localhost:8000',
+        'base_url' => 'https://bj-decoupage.wwiinn.org/',
 
         // [Laravel Sanctum] Fetch a CSRF token before each request, and add it as an X-XSRF-TOKEN header.
         'use_csrf' => false,
@@ -123,7 +123,6 @@ return [
 
     // Text to place in the "Introduction" section, right after the `description`. Markdown and HTML are supported.
     'intro_text' => <<<INTRO
-    Cette API s'inspire du découpage territorial du Bénin tel que proposé par leplutonien.
 
 <aside>Au fur et à mesure que vous défilez, vous verrez des exemples de code permettant d'utiliser l'API dans différents langages de programmation dans la zone sombre à droite (ou dans le cadre du contenu sur mobile).
 Vous pouvez changer le langage utilisé à l'aide des onglets en haut à droite (ou à partir du menu de navigation en haut à gauche sur mobile).</aside>

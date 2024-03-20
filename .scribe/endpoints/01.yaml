@@ -21,17 +21,77 @@ endpoints:
     headers:
       Content-Type: application/json
       Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
+    urlParameters:
+      search:
+        name: search
+        description: 'Une partie de l\''écriture de la commune recherchée.'
+        required: false
+        example: Pa
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        custom: []
+      perPage:
+        name: perPage
+        description: 'Nombre de résultat par page.'
+        required: false
+        example: 20
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        custom: []
+      page:
+        name: page
+        description: 'Le numero de page.'
+        required: false
+        example: 3
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        custom: []
+    cleanUrlParameters:
+      search: Pa
+      perPage: 20
+      page: 3
     queryParameters: []
     cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
+    bodyParameters:
+      search:
+        name: search
+        description: ''
+        required: false
+        example: omnis
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      page:
+        name: page
+        description: 'Must be at least 1.'
+        required: false
+        example: 67
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      perPage:
+        name: perPage
+        description: 'Must be at least 1.'
+        required: false
+        example: 82
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      search: omnis
+      page: 67
+      perPage: 82
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '[{"id":1,"label":"BANIKOARA"},{"id":2,"label":"GOGOUNOU"},{"id":3,"label":"KANDI"},{"id":4,"label":"KARIMAMA"},{"id":5,"label":"MALANVILLE"},{"id":6,"label":"SEGBANA"},{"id":7,"label":"BOUKOUMBE"},{"id":8,"label":"COBLY"},{"id":9,"label":"KEROU"},{"id":10,"label":"KOUANDE"},{"id":11,"label":"MATERI"},{"id":12,"label":"NATITINGOU"},{"id":13,"label":"OUASSA-PEHUNCO"},{"id":14,"label":"TANGUIETA"},{"id":15,"label":"TOUKOUNTOUNA"},{"id":16,"label":"ABOMEY-CALAVI"},{"id":17,"label":"ALLADA"},{"id":18,"label":"KPOMASSE"},{"id":19,"label":"OUIDAH"},{"id":20,"label":"SO-AVA"},{"id":21,"label":"TOFFO"},{"id":22,"label":"TORI-BOSSITO"},{"id":23,"label":"ZE"},{"id":24,"label":"BEMBEREKE"},{"id":25,"label":"KALALE"},{"id":26,"label":"N''DALI"},{"id":27,"label":"NIKKI"},{"id":28,"label":"PARAKOU"},{"id":29,"label":"PERERE"},{"id":30,"label":"SINENDE"},{"id":31,"label":"TCHAOUROU"},{"id":32,"label":"BANTE"},{"id":33,"label":"DASSA-ZOUME"},{"id":34,"label":"GLAZOUE"},{"id":35,"label":"OUESSE"},{"id":36,"label":"SAVALOU"},{"id":37,"label":"SAVE"},{"id":38,"label":"APLAHOUE"},{"id":39,"label":"DJAKOTOMEY"},{"id":40,"label":"DOGBO"},{"id":41,"label":"KLOUEKANMEY"},{"id":42,"label":"LALO"},{"id":43,"label":"TOVIKLIN"},{"id":44,"label":"BASSILA"},{"id":45,"label":"COPARGO"},{"id":46,"label":"DJOUGOU"},{"id":47,"label":"OUAKE"},{"id":48,"label":"COTONOU"},{"id":49,"label":"ATHIEME"},{"id":50,"label":"BOPA"},{"id":51,"label":"COME"},{"id":52,"label":"GRAND-POPO"},{"id":53,"label":"HOUEYOGBE"},{"id":54,"label":"LOKOSSA"},{"id":55,"label":"ADJARRA"},{"id":56,"label":"ADJOHOUN"},{"id":57,"label":"AGUEGUES"},{"id":58,"label":"AKPRO-MISSERETE"},{"id":59,"label":"AVRANKOU"},{"id":60,"label":"BONOU"},{"id":61,"label":"DANGBO"},{"id":62,"label":"PORTO-NOVO"},{"id":63,"label":"SEME-PODJI"},{"id":64,"label":"ADJA-OUERE"},{"id":65,"label":"IFANGNI"},{"id":66,"label":"KETOU"},{"id":67,"label":"POBE"},{"id":68,"label":"SAKETE"},{"id":69,"label":"ABOMEY"},{"id":70,"label":"AGBANGNIZOUN"},{"id":71,"label":"BOHICON"},{"id":72,"label":"COVE"},{"id":73,"label":"DJIDJA"},{"id":74,"label":"OUINHI"},{"id":75,"label":"ZAGNANADO"},{"id":76,"label":"ZA-KPOTA"},{"id":77,"label":"ZOGBODOMEY"}]'
+        status: 404
+        content: '{"error":"Commune non trouv\u00e9"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -121,7 +181,7 @@ endpoints:
       communeName:
         name: communeName
         description: 'Le nom de la commune.'
-        required: false
+        required: true
         example: Cotonou
         type: string
         enumValues: []
